@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&family=Axiforma:wght@0,400;&family=Arial:wght@400&display=swap');
+
+main {
+    max-width: 1080px;
+    padding: 0 15px;
+    margin-right: auto;
+    margin-left: auto;
+    overflow: hidden;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --text-color: #010415;
+    --link-color: #7e33d5;
+    --link-hover: #b173e9;
+}
+
+a,label,li,p {
+    color: var(--text-color);
+    font-family: Poppins, Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    margin: 0;
+}
+
+h1,h2,h3,h4,h1,h2,h3,h4 {
+    color: var(--text-color);
+    font-family: Axiforma, Arial, sans-serif;
+    font-weight: 400;
+    margin: 0;
+}
+
+h1 {
+    font-size: 55px;
+    line-height: 80px;
+}
+
+h2 {
+    font-size: 46px;
+    line-height: 68px;
+}
+
+li {
+    margin-bottom: 1rem;
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+    transition: .2s ease;
+}
+
+a:hover {
+    color: var(--link-hover);
+}
+
+a,strong {
+    font-size: inherit;
+    font-weight: 600;
+}
+
+.content__article {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.blog-box {
+    --box-row-gap: 1rem;
+    border-radius: 32px;
+    box-shadow: 0 0 5px 0 rgb(16 11 21 / 15%), 0 0 1px 0 rgb(16 11 21 / 15%);
+    margin: 1rem auto;
+    max-width: 100%;
+    padding: 32px;
+    position: relative;
+    width: 100%;
+}
+
+.blog-box__closing {
+    bottom: 48px;
+    opacity: .5;
+    position: absolute;
+    right: 48px;
+    width: 160px;
+    z-index: 0;
+}
+
+.blog-box__container {
+    grid-row-gap: 24px;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0;
+    position: relative;
+    z-index: 1;
+}
+
+.blog-box__mark {
+    border-radius: 16px;
+    color: #fff;
+    height: 64px;
+    padding: 16px;
+    width: 64px;
+    background: #7e33d5;
+}
+
+.blog-box__text {
+    grid-row-gap: 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+
+.blog-box__author-container {
+    align-items: center;
+    display: flex;
+}
+
+.blog-box__image {
+    border-radius: 100%;
+    height: 64px;
+    margin-right: 24px;
+    overflow: hidden;
+    width: 64px;
+}
+
+.blog-box__author {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.blog-box__author-details p {
+    color: #a9a4ae;
+    font-size: 16px;
+}
+
+/* “” */
